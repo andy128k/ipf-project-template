@@ -1,0 +1,21 @@
+{
+  "name": "<username>/<projectname>",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packages.andy128k.net/php/"
+    }
+  ],
+  "autoload": {
+    "classmap" : ["project"]
+  },
+  "require": {
+    "andy128k/ipf": "dev-master"
+  },
+  "config": {
+    "vendor-dir": "project/vendor",
+    "bin-dir": "project/bin"
+  },
+  "minimum-stability": "dev"
+}
+

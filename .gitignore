@@ -1,0 +1,10 @@
+/tmp
+/log
+.DS_Store
+/htdocs/media/upload
+/project/vendor
+/project/settings_local.php
+/working-data.tar
+/fabfile.py
+/fabfile.pyc
+
