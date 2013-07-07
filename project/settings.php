@@ -3,7 +3,6 @@
 $project_root = dirname(__FILE__).DIRECTORY_SEPARATOR.'..';
 
 return array(
-    'app_base' => '',
     'database' => array(
         'driver'    => 'mysql',
         'host'      => 'localhost',
@@ -14,11 +13,8 @@ return array(
     ),
     'tmp' => $project_root . '/tmp',
 
-    'media_url' => '/media/',
-    'media_path' => $project_root . '/htdocs/media/',
     'upload_url' => '/media/upload/',
     'upload_path' => $project_root . '/htdocs/media/upload/',
-    'admin_media_url' => '/media/admin/',
 
     'secret_key' => '<secret>',
 
@@ -34,9 +30,7 @@ return array(
     'template_context_processors' => array(
         'IPF_Context_Auth',
         'IPF_Context_Media',
-        'IPF_Context_AdminMedia',
         'IPF_Context_Upload',
-        'IPF_Context_Version',
         'IPF_Context_Current',
     ),
 
