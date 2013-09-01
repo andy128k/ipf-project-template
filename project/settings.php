@@ -13,9 +13,6 @@ return array(
     ),
     'tmp' => $project_root . '/tmp',
 
-    'upload_url' => '/media/upload/',
-    'upload_path' => $project_root . '/htdocs/media/upload/',
-
     'secret_key' => '<secret>',
 
     'debug' => false,
@@ -27,12 +24,10 @@ return array(
         'Content',
     ),
 
+    /*
     'template_context_processors' => array(
-        'IPF_Context_Auth',
-        'IPF_Context_Media',
-        'IPF_Context_Upload',
-        'IPF_Context_Current',
     ),
+    */
 
     'middlewares' => array(
         'IPF_Middleware_Common',
@@ -42,7 +37,7 @@ return array(
     'urls' => array(
         array('prefix'=>'#^/admin/', 'urls' => IPF_Admin_App::urls()),
         array('prefix'=>'', 'urls' => array(
-            array('regex'=>'#^/$#', 'func' => 'Content_Views_Index'),
+            array('expr' => '/', 'func' => 'Content_Views_Index'),
         )),
     ),
 );
