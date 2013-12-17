@@ -3,7 +3,7 @@
 .DS_Store
 /htdocs/static
 /htdocs/media/upload
-/project/vendor
+/vendor
 /project/settings_local.php
 /working-data.tar
 /fabfile.py
