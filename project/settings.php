@@ -24,14 +24,10 @@ return array(
         'Content',
     ),
 
-    /*
-    'template_context_processors' => array(
-    ),
-    */
-
     'middlewares' => array(
         'IPF_Middleware_Common',
         'IPF_Session_Middleware',
+        'IPF_Auth_Middleware',
     ),
 
     'urls' => array(
